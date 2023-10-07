@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment2</h1>
+    <button onclick="register()">Register</button>
+    <button onclick="play('Rock')">Play Rock</button>
+    <button onclick="play('Paper')">Play Paper</button>
+    <button onclick="play('Scissors')">Play Scissors</button>
+    <button onclick="reveal('Rock')">Reveal Rock</button>
+    <button onclick="reveal('Paper')">Reveal Paper</button>
+    <button onclick="reveal('Scissors')">Reveal Scissors</button>
+    <button onclick="getOutcome()">Get Outcome</button>
+    <button onclick="startRevealPhase()">Start Reveal Phase</button>
+    <div id="status"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./migrations/1_app.js"></script>
+</body>
+</html>
